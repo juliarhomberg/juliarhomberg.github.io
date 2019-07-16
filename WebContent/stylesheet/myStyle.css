@@ -60,10 +60,9 @@ form {
 .topnav {
 	overflow: hidden;
 	background-color: #e9e9e9;
-	text-align:center;
-	margin:0 auto;
-	width:900px;
-	padding:0px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
 }
 
 .topnav a {
@@ -75,7 +74,7 @@ form {
 	text-decoration: none;
 	font-size: 19px;
 	font-weight: 200;
-	width:130px;
+	 width:130px; 
 }
 
 .topnav a:hover {
@@ -93,21 +92,26 @@ form {
 }
 
 @media screen and (max-width: 600px) {
-	.topnav a:not (:first-child ) {
+	.topnav a{
 		display: none;
 	}
 	.topnav a.icon {
-		float: right;
 		display: block;
+		width:100%;
+		text-align: left;	
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.topnav.responsive {
 		position: relative;
+		display: block;
+  		align-items: left;
+  		justify-content: left;
 	}
 	.topnav.responsive a.icon {
 		position: absolute;
+		display: none;
 		right: 0;
 		top: 0;
 	}
@@ -118,6 +122,29 @@ form {
 	}
 }
 
+@media screen and (max-width: 600px) {
+	section {
+		all: none;
+		text-align: left;
+		align-items:center;
+	}
+	footer{
+	min-height:5%;
+	}	
+	.imgNL {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 95%;
+	}
+		.imgNLJ {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 65%;
+	}
+}
+
 .center {
 	display: block;
 	margin: 0.5vw auto 0.5vw auto;
@@ -125,7 +152,7 @@ form {
 
 footer {
 	background-color: #e9e9e9;
-	height: 5vw;
+	height: 4vw;
 	display: block;
 	color: #000;
 	text-align: center;
